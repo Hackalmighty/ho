@@ -1,0 +1,75 @@
+﻿@model IEnumerable<policlinico__con_migracion.Migracion.Actividads>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Campanias.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.empresa.sRazon_social)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tipo_examen_ocupacional.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaFinal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaFinalPlan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Campanias.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.empresa.sRazon_social)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo_examen_ocupacional.descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaFinal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaFinalPlan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdActividad }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdActividad }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdActividad })
+        </td>
+    </tr>
+}
+
+</table>

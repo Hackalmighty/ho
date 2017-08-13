@@ -1,0 +1,81 @@
+﻿@model IEnumerable<policlinico__con_migracion.Migracion.empresa>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.sRazon_social)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sDireccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iTelefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iRuc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iCelular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sCorreo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sContacto_nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iContacto_celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sContacto_correo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.sRazon_social)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sDireccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iTelefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iRuc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iCelular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sCorreo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sContacto_nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iContacto_celular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sContacto_correo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Idempresa }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Idempresa }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Idempresa })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,170 @@
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\ApplicationInsights.config
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\csc.exe
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\System.Collections.Immutable.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\vbc.exe
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\VBCSCompiler.exe
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\roslyn\VBCSCompiler.exe.config
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\policlinico  con migracion.dll.config
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\policlinico  con migracion.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\policlinico  con migracion.pdb
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Antlr3.Runtime.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\EntityFramework.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\EntityFramework.SqlServer.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.Web.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.WindowsServer.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.ApplicationInsights.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.Google.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Web.Infrastructure.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Newtonsoft.Json.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Owin.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.Helpers.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.Mvc.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.Optimization.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.Razor.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.WebPages.Deployment.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.WebPages.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.WebPages.Razor.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\WebGrease.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.Web.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AI.WindowsServer.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.ApplicationInsights.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.Helpers.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.Mvc.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.Optimization.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.Razor.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.WebPages.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.WebPages.Deployment.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\System.Web.WebPages.Razor.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Antlr3.Runtime.pdb
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Newtonsoft.Json.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\EntityFramework.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\EntityFramework.SqlServer.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.Google.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\obj\Debug\policlinico  con migracion.dll
+c:\users\deus\documents\visual studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\obj\Debug\policlinico  con migracion.pdb
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion\policlinico  con migracion\obj\Debug\policlinico  con migracion.csprojResolveAssemblyReference.cache
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\ApplicationInsights.config
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\csc.exe
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\vbc.exe
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\VBCSCompiler.exe
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\policlinico  con migracion.dll.config
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\policlinico  con migracion.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\policlinico  con migracion.pdb
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Antlr3.Runtime.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\EntityFramework.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\EntityFramework.SqlServer.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.Web.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Newtonsoft.Json.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Owin.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Helpers.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Mvc.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Optimization.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Razor.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.WebPages.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.WebPages.Razor.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\WebGrease.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.Web.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Helpers.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Mvc.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Optimization.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Razor.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.WebPages.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.WebPages.Razor.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Antlr3.Runtime.pdb
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Newtonsoft.Json.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\EntityFramework.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\EntityFramework.SqlServer.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\obj\Debug\policlinico  con migracion.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\obj\Debug\policlinico  con migracion.pdb
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Net.Http.Formatting.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Http.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Http.WebHost.dll
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Net.Http.Formatting.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Http.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\bin\System.Web.Http.WebHost.xml
+C:\Users\Deus\Documents\Visual Studio 2015\Projects\policlinico  con migracion --con roles\policlinico  con migracion\obj\Debug\policlinico  con migracion.csprojResolveAssemblyReference.cache

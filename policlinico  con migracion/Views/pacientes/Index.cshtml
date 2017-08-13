@@ -1,0 +1,45 @@
+﻿@model IEnumerable<policlinico__con_migracion.Migracion.paciente>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.persona.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.area_trabajo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.h_istoria_clinica)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.persona.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.area_trabajo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.h_istoria_clinica)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

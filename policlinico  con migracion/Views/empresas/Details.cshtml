@@ -1,0 +1,90 @@
+﻿@model policlinico__con_migracion.Migracion.empresa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>empresa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sRazon_social)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sRazon_social)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sDireccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sDireccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iTelefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iTelefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iRuc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iRuc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iCelular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iCelular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sCorreo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sCorreo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sContacto_nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sContacto_nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iContacto_celular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iContacto_celular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sContacto_correo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sContacto_correo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Idempresa }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

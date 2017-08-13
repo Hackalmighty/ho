@@ -1,0 +1,90 @@
+﻿@model policlinico__con_migracion.Migracion.atencion_admision
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>atencion_admision</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.empresa.sRazon_social)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.empresa.sRazon_social)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.examenes.nombre_examen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.examenes.nombre_examen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.paciente.area_trabajo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.paciente.area_trabajo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.perfil.nombre_perfil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.perfil.nombre_perfil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_examen_ocupacional.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_examen_ocupacional.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_atencion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_atencion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_examen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_examen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.local)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.local)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

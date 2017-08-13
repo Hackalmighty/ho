@@ -1,0 +1,82 @@
+﻿@model policlinico__con_migracion.Migracion.Actividads
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Actividads</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Campanias.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Campanias.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.empresa.sRazon_social)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.empresa.sRazon_social)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_examen_ocupacional.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_examen_ocupacional.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFinal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFinalPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFinalPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdActividad }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
