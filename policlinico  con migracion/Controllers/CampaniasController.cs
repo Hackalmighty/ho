@@ -7,6 +7,9 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using policlinico__con_migracion.Migracion;
+using policlinico__con_migracion.Models;
+// creada por hilton 
+//controlador de campañas  para  usar el  crud  de la identidad campañas.
 
 namespace policlinico__con_migracion.Controllers
 {
@@ -38,7 +41,8 @@ namespace policlinico__con_migracion.Controllers
         // GET: Campanias/Create
         public ActionResult Create()
         {
-            return View();
+            CampaniaViewModel campania = new CampaniaViewModel();
+            return PartialView(campania);
         }
 
         // POST: Campanias/Create
@@ -46,17 +50,42 @@ namespace policlinico__con_migracion.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IdCampania,Nombre,FechaPlan,Fecha,Publicada")] Campanias campanias)
+        public ActionResult Create([Bind(Include = "IdCampania,Nombre,Fecha,IncluyeProspectos")] CampaniaViewModel campanias)
         {
             if (ModelState.IsValid)
             {
-                db.Campanias.Add(campanias);
+                Campanias campania = new Campanias();
+                campania.Nombre = campanias.Nombre;
+                campania.Fecha = campanias.Fecha;
+                campania.FechaPlan = campanias.Fecha;
+                campania.Publicada = false;
+                if (campanias.IncluyeProspectos)
+                {
+                    var prospectos = (from c in db.empresa
+                                       select c).ToList();
+                    foreach (var item in prospectos)
+                    {
+                        campania.Actividads.Add(new Actividads
+                        {
+                            Idempresa = item.Idempresa,
+                            FechaFinal = campania.Fecha.AddDays(-15),
+                            FechaFinalPlan = campania.Fecha.AddDays(-15),
+                            FechaInicial = campania.Fecha.AddDays(-15),
+                            FechaInicialPlan = campania.Fecha.AddDays(-15),
+                            Descripcion = "Llamar por telefono la empresa para la campaña " + campania.Nombre,
+                            idtipexam = 6,
+                            Estado = 0
+                        });
+                    }
+                }
+                db.Campanias.Add(campania);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return Json(new { success = true });
             }
 
-            return View(campanias);
+            return PartialView(campanias);
         }
+    
 
         // GET: Campanias/Edit/5
         public ActionResult Edit(int? id)
@@ -65,12 +94,17 @@ namespace policlinico__con_migracion.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Campanias campanias = db.Campanias.Find(id);
-            if (campanias == null)
+            Campanias campania = db.Campanias.Find(id);
+            if (campania == null)
             {
                 return HttpNotFound();
             }
-            return View(campanias);
+            CampaniaViewModel fcampania = new CampaniaViewModel();
+            fcampania.IdCampania = campania.IdCampania;
+            fcampania.Fecha = campania.Fecha;
+            fcampania.Nombre = campania.Nombre;
+            fcampania.Publicada = campania.Publicada;
+            return View(fcampania);
         }
 
         // POST: Campanias/Edit/5
@@ -78,7 +112,7 @@ namespace policlinico__con_migracion.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IdCampania,Nombre,FechaPlan,Fecha,Publicada")] Campanias campanias)
+        public ActionResult Edit([Bind(Include = "IdCampania,Nombre,FechaPlan,Fecha,")] Campanias campanias)
         {
             if (ModelState.IsValid)
             {
@@ -114,7 +148,42 @@ namespace policlinico__con_migracion.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult MuestraDetalle(int idCampania)
+        {
+            CampaniaViewModel campania = new CampaniaViewModel();
+            List<ActividadViewModel> actividades = campania.GetActividades(idCampania);
+            campania.Dispose();
+            return PartialView("_ListadoActividades", actividades);
+        }
 
+        public ActionResult AgregaActividad(int idCampania, int idCliente)
+        {
+            CampaniaViewModel fcampania = new CampaniaViewModel();
+            if (!fcampania.ExisteCliente(idCampania, idCliente))
+                fcampania.AgregaCliente(idCampania, idCliente);
+            List<ActividadViewModel> actividades = new List<ActividadViewModel>();
+            actividades = fcampania.GetActividades(idCampania);
+            fcampania.Dispose();
+            return PartialView("_ListadoActividades", actividades);
+        }
+        public ActionResult EliminaActividad(int idActividad)
+        {
+            Actividads actividad = db.Actividads.Find(idActividad);
+            if (actividad != null)
+            {
+                int idCampania = (int)actividad.IdCampania;
+                db.Actividads.Remove(actividad);
+                db.SaveChanges();
+                Campanias campania = db.Campanias.Find(idCampania);
+                CampaniaViewModel fcampania = new CampaniaViewModel();
+                fcampania.IdCampania = campania.IdCampania;
+                fcampania.Fecha = campania.Fecha;
+                fcampania.Nombre = campania.Nombre;
+                return View("Edit", fcampania);
+            }
+            else
+                return HttpNotFound();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -123,5 +192,6 @@ namespace policlinico__con_migracion.Controllers
             }
             base.Dispose(disposing);
         }
+
     }
 }

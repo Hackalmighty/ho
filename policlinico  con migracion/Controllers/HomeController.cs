@@ -10,8 +10,10 @@ namespace policlinico__con_migracion.Controllers
     {
         public ActionResult Index()
         {
+           // return RedirectToAction("Login", "Account");
             return View();
         }
+
 
         public ActionResult About()
         {

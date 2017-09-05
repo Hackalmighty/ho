@@ -15,6 +15,32 @@ namespace policlinico__con_migracion.Controllers
     {
         private Model1 db = new Model1();
 
+        public JsonResult Eventos(DateTime start, DateTime end)
+        {
+            var actividades = (from a in db.Actividads
+                               join c in db.empresa
+                                   on a.Idempresa equals c.Idempresa
+                               where a.FechaInicial >= start
+                               && a.FechaInicial <= end
+                               select new 
+                               {
+                                   a.IdActividad,
+                                   a.FechaInicial,
+                                   c.sRazon_social,
+                                   a.Descripcion
+                               }).ToList();
+            List<Events> eventos = new List<Events>();
+            foreach (var item in actividades)
+            {
+                Events evento = new Events();
+                evento.id = item.IdActividad;
+                evento.start = item.FechaInicial.ToString("o");
+                evento.end = item.FechaInicial.ToString("o");
+                evento.title = item.sRazon_social + " " + item.Descripcion;
+                eventos.Add(evento);
+            }
+            return Json(eventos, JsonRequestBehavior.AllowGet);
+        }
         // GET: Actividads
         public ActionResult Index()
         {
@@ -45,8 +71,7 @@ namespace policlinico__con_migracion.Controllers
         }
 
         // POST: Actividads/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+       // para crear una actividad se consultara a  la clace actividadviewmodel con el sin de solo traer una campaña tipo de examen y empresa como un solo objeto
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(ActividadViewModel factividad)
@@ -71,23 +96,7 @@ namespace policlinico__con_migracion.Controllers
             ViewData["tipos"] = tipos;
             return PartialView(factividad);
         }
-        /*public ActionResult Create([Bind(Include = "IdActividad,Descripcion,FechaInicial,FechaFinal,FechaFinalPlan,Estado,Idempresa,IdCampania,idtipexam")] Actividads actividads)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Actividads.Add(actividads);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-
-            ViewBag.IdCampania = new SelectList(db.Campanias, "IdCampania", "Nombre", actividads.IdCampania);
-            ViewBag.Idempresa = new SelectList(db.empresa, "Idempresa", "sRazon_social", actividads.Idempresa);
-            ViewBag.idtipexam = new SelectList(db.tipo_examen_ocupacional, "idtipexam", "descripcion", actividads.idtipexam);
-            return View(actividads);
-        }
-        */
-        // GET: Actividads/Edit/5
+       // GET: Actividads/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -104,7 +113,7 @@ namespace policlinico__con_migracion.Controllers
             factividad.IdActividad = actividad.IdActividad;
             factividad.Descripcion = actividad.Descripcion;
             factividad.FechaInicial = actividad.FechaInicial;
-            factividad.IdEmpresa = actividad.idtipexam;
+            factividad.IdEmpresa = actividad.Idempresa;
             factividad.idtipexam = actividad.idtipexam;
             factividad.nombre = actividad.tipo_examen_ocupacional.descripcion;
             var tipos = new SelectList(db.tipo_examen_ocupacional.ToList(), "TipoActividadId", "Descripcion");

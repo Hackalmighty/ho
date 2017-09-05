@@ -15,9 +15,6 @@
             @Html.DisplayNameFor(model => model.especialidad.nombre)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.persona.nombre)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.cmp_rne)
         </th>
         <th>
@@ -25,6 +22,12 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.fecha_baja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidos)
         </th>
         <th></th>
     </tr>
@@ -35,9 +38,6 @@
             @Html.DisplayFor(modelItem => item.especialidad.nombre)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.persona.nombre)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.cmp_rne)
         </td>
         <td>
@@ -45,6 +45,12 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.fecha_baja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidos)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

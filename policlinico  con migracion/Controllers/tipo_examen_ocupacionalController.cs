@@ -7,11 +7,13 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using policlinico__con_migracion.Migracion;
+using policlinico__con_migracion.Models;
 
 namespace policlinico__con_migracion.Controllers
 {
     public class tipo_examen_ocupacionalController : Controller
-    {
+    {//todo: usuario y contraseña; admin _Aa1234
+        //TODO:  quiero usar ek tracker pero me manda un error al momento de ejecucion con respesto a los  roles   
         private Model1 db = new Model1();
 
         // GET: tipo_examen_ocupacional

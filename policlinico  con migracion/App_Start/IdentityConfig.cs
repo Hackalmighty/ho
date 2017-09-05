@@ -13,6 +13,7 @@ using Microsoft.Owin.Security;
 using policlinico__con_migracion.Models;
 using System.Net.Mail;
 
+
 namespace policlinico__con_migracion
 {
     public class EmailService : IIdentityMessageService

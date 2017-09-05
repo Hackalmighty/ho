@@ -10,6 +10,7 @@ using policlinico__con_migracion.Migracion;
 
 namespace policlinico__con_migracion.Controllers
 {
+    //sin cambios pendientes 100%  hilton
     public class AspNetRolesController : Controller
     {
         private Model1 db = new Model1();

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<policlinico__con_migracion.Migracion.examenes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_examen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.costo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.recomendaciones)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_examen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.costo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.recomendaciones)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idexamenes }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idexamenes }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idexamenes })
+        </td>
+    </tr>
+}
+
+</table>

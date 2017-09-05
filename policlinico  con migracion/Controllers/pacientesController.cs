@@ -10,94 +10,75 @@ using policlinico__con_migracion.Migracion;
 
 namespace policlinico__con_migracion.Controllers
 {
-    public class pacientesController : Controller
+    public class PacientesController : Controller
     {
         private Model1 db = new Model1();
 
-        // GET: pacientes
+        // GET: Pacientes
         public ActionResult Index()
         {
-            var paciente = db.paciente.Include(p => p.persona);
-            return View(paciente.ToList());
+            return View(db.Paciente.ToList());
         }
 
-        // GET: pacientes/Details/5
+        // GET: Pacientes/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            paciente paciente = db.paciente.Find(id);
+            Paciente paciente = db.Paciente.Find(id);
             if (paciente == null)
             {
                 return HttpNotFound();
             }
             return View(paciente);
         }
-        /// <summary>
-        /// 
-        public ActionResult crearpersona([Bind(Include = "idpersona,nombre,apellido,num_doc_identidad,tipo_doc_identidad,direccion,telefono,celular,lugar_nacimiento,fecha_nacimiento,grado_instruccion,ocupacion,estado_ciivil")] persona persona)
-        {
-            if (ModelState.IsValid)
-            {
-                db.persona.Add(persona);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
 
-           
-            return PartialView( persona);
-        }
-        /// </summary>
-        /// <returns></returns>
-        // GET: pacientes/Create
+        // GET: Pacientes/Create
         public ActionResult Create()
         {
-            ViewBag.idpersona = new SelectList(db.persona, "idpersona", "nombre");
             return View();
         }
 
-        // POST: pacientes/Create
+        // POST: Pacientes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "idpaciente,idpersona,area_trabajo,h_istoria_clinica")] paciente paciente)
+        public ActionResult Create([Bind(Include = "idpersona,nombre,apellido,num_doc_identidad,tipo_doc_identidad,direccion,telefono,celular,lugar_nacimiento,fecha_nacimiento,grado_instruccion,ocupacion,estado_ciivil,Area_de_trabajo")] Paciente paciente)
         {
             if (ModelState.IsValid)
             {
-                db.paciente.Add(paciente);
+                db.Paciente.Add(paciente);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.idpersona = new SelectList(db.persona, "idpersona", "nombre", paciente.idpersona);
             return View(paciente);
         }
 
-        // GET: pacientes/Edit/5
+        // GET: Pacientes/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            paciente paciente = db.paciente.Find(id);
+            Paciente paciente = db.Paciente.Find(id);
             if (paciente == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.idpersona = new SelectList(db.persona, "idpersona", "nombre", paciente.idpersona);
             return View(paciente);
         }
 
-        // POST: pacientes/Edit/5
+        // POST: Pacientes/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "idpaciente,idpersona,area_trabajo,h_istoria_clinica")] paciente paciente)
+        public ActionResult Edit([Bind(Include = "idpersona,nombre,apellido,num_doc_identidad,tipo_doc_identidad,direccion,telefono,celular,lugar_nacimiento,fecha_nacimiento,grado_instruccion,ocupacion,estado_ciivil,Area_de_trabajo")] Paciente paciente)
         {
             if (ModelState.IsValid)
             {
@@ -105,18 +86,17 @@ namespace policlinico__con_migracion.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.idpersona = new SelectList(db.persona, "idpersona", "nombre", paciente.idpersona);
             return View(paciente);
         }
 
-        // GET: pacientes/Delete/5
+        // GET: Pacientes/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            paciente paciente = db.paciente.Find(id);
+            Paciente paciente = db.Paciente.Find(id);
             if (paciente == null)
             {
                 return HttpNotFound();
@@ -124,13 +104,13 @@ namespace policlinico__con_migracion.Controllers
             return View(paciente);
         }
 
-        // POST: pacientes/Delete/5
+        // POST: Pacientes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            paciente paciente = db.paciente.Find(id);
-            db.paciente.Remove(paciente);
+            Paciente paciente = db.Paciente.Find(id);
+            db.Paciente.Remove(paciente);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

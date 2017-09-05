@@ -17,7 +17,7 @@ namespace policlinico__con_migracion.Controllers
         // GET: medicos
         public ActionResult Index()
         {
-            var medico = db.medico.Include(m => m.especialidad).Include(m => m.persona);
+            var medico = db.medico.Include(m => m.especialidad);
             return View(medico.ToList());
         }
 
@@ -40,7 +40,6 @@ namespace policlinico__con_migracion.Controllers
         public ActionResult Create()
         {
             ViewBag.idespecialidad = new SelectList(db.especialidad, "idespecialidad", "nombre");
-            ViewBag.idpersona = new SelectList(db.persona, "idpersona", "nombre");
             return View();
         }
 
@@ -49,7 +48,7 @@ namespace policlinico__con_migracion.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "idmedico,idpersona,idespecialidad,cmp_rne,fecha_alta,fecha_baja")] medico medico)
+        public ActionResult Create([Bind(Include = "idmedico,idespecialidad,cmp_rne,fecha_alta,fecha_baja,nombre,apellidos")] medico medico)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +58,6 @@ namespace policlinico__con_migracion.Controllers
             }
 
             ViewBag.idespecialidad = new SelectList(db.especialidad, "idespecialidad", "nombre", medico.idespecialidad);
-            ViewBag.idpersona = new SelectList(db.persona, "idpersona", "nombre", medico.idpersona);
             return View(medico);
         }
 
@@ -76,7 +74,6 @@ namespace policlinico__con_migracion.Controllers
                 return HttpNotFound();
             }
             ViewBag.idespecialidad = new SelectList(db.especialidad, "idespecialidad", "nombre", medico.idespecialidad);
-            ViewBag.idpersona = new SelectList(db.persona, "idpersona", "nombre", medico.idpersona);
             return View(medico);
         }
 
@@ -85,7 +82,7 @@ namespace policlinico__con_migracion.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "idmedico,idpersona,idespecialidad,cmp_rne,fecha_alta,fecha_baja")] medico medico)
+        public ActionResult Edit([Bind(Include = "idmedico,idespecialidad,cmp_rne,fecha_alta,fecha_baja,nombre,apellidos")] medico medico)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +91,6 @@ namespace policlinico__con_migracion.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.idespecialidad = new SelectList(db.especialidad, "idespecialidad", "nombre", medico.idespecialidad);
-            ViewBag.idpersona = new SelectList(db.persona, "idpersona", "nombre", medico.idpersona);
             return View(medico);
         }
 

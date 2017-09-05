@@ -80,6 +80,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Log" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
       <Private>True</Private>
@@ -213,68 +214,65 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ActividadsController.cs" />
     <Compile Include="Controllers\AspNetRolesController.cs" />
-    <Compile Include="Controllers\atencion_admisionController.cs" />
     <Compile Include="Controllers\CampaniasController.cs" />
     <Compile Include="Controllers\empresasController.cs" />
     <Compile Include="Controllers\especialidadsController.cs" />
-    <Compile Include="Controllers\examenesmController.cs" />
+    <Compile Include="Controllers\examenesController.cs" />
+    <Compile Include="Controllers\HistoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\medicosController.cs" />
-    <Compile Include="Controllers\pacientesController.cs" />
-    <Compile Include="Controllers\perfilsController.cs" />
-    <Compile Include="Controllers\personasController.cs" />
+    <Compile Include="Controllers\PacientesController.cs" />
     <Compile Include="Controllers\tipo_examen_ocupacionalController.cs" />
     <Compile Include="Controllers\UsersAdminController.cs" />
     <Compile Include="generales.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migracion\Actividads.cs" />
-    <Compile Include="Migracion\AspNetRoles.cs" />
-    <Compile Include="Migracion\AspNetUserClaims.cs" />
-    <Compile Include="Migracion\AspNetUserLogins.cs" />
-    <Compile Include="Migracion\AspNetUsers.cs" />
-    <Compile Include="Migracion\atencion_admision.cs" />
-    <Compile Include="Migracion\Campanias.cs" />
-    <Compile Include="Migracion\C__MigrationHistory.cs" />
-    <Compile Include="Migracion\empresa.cs" />
-    <Compile Include="Migracion\especialidad.cs" />
-    <Compile Include="Migracion\examenes.cs" />
-    <Compile Include="Migracion\medico.cs" />
-    <Compile Include="Migracion\Model1.cs" />
-    <Compile Include="Migracion\paciente.cs" />
-    <Compile Include="Migracion\perfil.cs" />
-    <Compile Include="Migracion\persona.cs" />
-    <Compile Include="Migracion\tipo_examen_ocupacional.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\ActividadViewModel.cs" />
-    <Compile Include="Models\AdminViewModel.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Events.cs" />
+    <Compile Include="Models\MigracionIdentity\Actividads.cs" />
+    <Compile Include="Models\MigracionIdentity\AspNetRoles.cs" />
+    <Compile Include="Models\MigracionIdentity\AspNetUserClaims.cs" />
+    <Compile Include="Models\MigracionIdentity\AspNetUserLogins.cs" />
+    <Compile Include="Models\MigracionIdentity\AspNetUsers.cs" />
+    <Compile Include="Models\MigracionIdentity\atencion_admision.cs" />
+    <Compile Include="Models\MigracionIdentity\Campanias.cs" />
+    <Compile Include="Models\MigracionIdentity\C__MigrationHistory.cs" />
+    <Compile Include="Models\MigracionIdentity\detalle_de_perfil.cs" />
+    <Compile Include="Models\MigracionIdentity\empresa.cs" />
+    <Compile Include="Models\MigracionIdentity\especialidad.cs" />
+    <Compile Include="Models\MigracionIdentity\examenes.cs" />
+    <Compile Include="Models\MigracionIdentity\medico.cs" />
+    <Compile Include="Models\contexto\Model1.cs" />
+    <Compile Include="Models\MigracionIdentity\Paciente.cs" />
+    <Compile Include="Models\MigracionIdentity\perfil.cs" />
+    <Compile Include="Models\MigracionIdentity\tipo_examen_ocupacional.cs" />
+    <Compile Include="Models\ViewModels\AccountViewModels.cs" />
+    <Compile Include="Models\ViewModels\ActividadViewModel.cs" />
+    <Compile Include="Models\ViewModels\AdminViewModel.cs" />
+    <Compile Include="Models\ViewModels\CampaniaViewModel.cs" />
+    <Compile Include="Models\contexto\IdentityModels.cs" />
+    <Compile Include="Models\ViewModels\History.cs" />
+    <Compile Include="Models\ViewModels\LogDetail.cs" />
+    <Compile Include="Models\ViewModels\ManageViewModels.cs" />
+    <Compile Include="MyMigrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-datepicker.css" />
-    <Content Include="Content\bootstrap-datepicker.min.css" />
-    <Content Include="Content\bootstrap-datepicker.standalone.css" />
-    <Content Include="Content\bootstrap-datepicker.standalone.min.css" />
-    <Content Include="Content\bootstrap-datepicker3.css" />
-    <Content Include="Content\bootstrap-datepicker3.min.css" />
-    <Content Include="Content\bootstrap-datepicker3.standalone.css" />
-    <Content Include="Content\bootstrap-datepicker3.standalone.min.css" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="App_Start\bootstrap - Copia.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\fullcalendar.css" />
-    <Content Include="Content\fullcalendar.min.css" />
-    <Content Include="Content\fullcalendar.print.css" />
-    <Content Include="favicon.ico" />
+    <Content Include="Content\estilologin.css" />
+    <Content Include="Content\estilos.css" />
+    <Content Include="Content\img\hospital1.jpg" />
+    <Content Include="Content\img\hospital2.jpg" />
+    <Content Include="Content\img\img5.jpg" />
+    <Content Include="Content\img\img6.jpg" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
@@ -284,19 +282,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ClassDiagram1.cd" />
-    <Content Include="Content\bootstrap-datepicker.css.map" />
-    <Content Include="Content\bootstrap-datepicker.min.css.map" />
-    <Content Include="Content\bootstrap-datepicker.standalone.css.map" />
-    <Content Include="Content\bootstrap-datepicker.standalone.min.css.map" />
-    <Content Include="Content\bootstrap-datepicker3.css.map" />
-    <Content Include="Content\bootstrap-datepicker3.min.css.map" />
-    <Content Include="Content\bootstrap-datepicker3.standalone.css.map" />
-    <Content Include="Content\bootstrap-datepicker3.standalone.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\fullcalendar.js" />
     <Content Include="Scripts\fullcalendar.min.js" />
@@ -335,7 +320,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -373,36 +360,11 @@
     <Content Include="Views\UsersAdmin\Delete.cshtml" />
     <Content Include="Views\UsersAdmin\Edit.cshtml" />
     <Content Include="Views\UsersAdmin\Index.cshtml" />
-    <Content Include="Views\examenesm\Create.cshtml" />
-    <Content Include="Views\examenesm\Delete.cshtml" />
-    <Content Include="Views\examenesm\Details.cshtml" />
-    <Content Include="Views\examenesm\Edit.cshtml" />
-    <Content Include="Views\examenesm\Index.cshtml" />
-    <Content Include="Views\perfils\Create.cshtml" />
-    <Content Include="Views\perfils\Delete.cshtml" />
-    <Content Include="Views\perfils\Details.cshtml" />
-    <Content Include="Views\perfils\Edit.cshtml" />
-    <Content Include="Views\perfils\Index.cshtml" />
-    <Content Include="Views\empresas\Create.cshtml" />
-    <Content Include="Views\empresas\Delete.cshtml" />
-    <Content Include="Views\empresas\Details.cshtml" />
-    <Content Include="Views\empresas\Edit.cshtml" />
-    <Content Include="Views\empresas\Index.cshtml" />
-    <Content Include="Views\especialidads\Create.cshtml" />
-    <Content Include="Views\especialidads\Delete.cshtml" />
-    <Content Include="Views\especialidads\Details.cshtml" />
-    <Content Include="Views\especialidads\Edit.cshtml" />
-    <Content Include="Views\especialidads\Index.cshtml" />
     <Content Include="Views\AspNetRoles\Create.cshtml" />
     <Content Include="Views\AspNetRoles\Delete.cshtml" />
     <Content Include="Views\AspNetRoles\Details.cshtml" />
     <Content Include="Views\AspNetRoles\Edit.cshtml" />
     <Content Include="Views\AspNetRoles\Index.cshtml" />
-    <Content Include="Views\tipo_examen_ocupacional\Create.cshtml" />
-    <Content Include="Views\tipo_examen_ocupacional\Delete.cshtml" />
-    <Content Include="Views\tipo_examen_ocupacional\Details.cshtml" />
-    <Content Include="Views\tipo_examen_ocupacional\Edit.cshtml" />
-    <Content Include="Views\tipo_examen_ocupacional\Index.cshtml" />
     <Content Include="Views\Actividads\Create.cshtml" />
     <Content Include="Views\Actividads\Delete.cshtml" />
     <Content Include="Views\Actividads\Details.cshtml" />
@@ -413,27 +375,39 @@
     <Content Include="Views\Campanias\Details.cshtml" />
     <Content Include="Views\Campanias\Edit.cshtml" />
     <Content Include="Views\Campanias\Index.cshtml" />
-    <Content Include="Views\atencion_admision\Create.cshtml" />
-    <Content Include="Views\atencion_admision\Delete.cshtml" />
-    <Content Include="Views\atencion_admision\Details.cshtml" />
-    <Content Include="Views\atencion_admision\Edit.cshtml" />
-    <Content Include="Views\atencion_admision\Index.cshtml" />
-    <Content Include="Views\personas\Create.cshtml" />
-    <Content Include="Views\personas\Delete.cshtml" />
-    <Content Include="Views\personas\Details.cshtml" />
-    <Content Include="Views\personas\Edit.cshtml" />
-    <Content Include="Views\personas\Index.cshtml" />
+    <Content Include="Views\examenes\Create.cshtml" />
+    <Content Include="Views\examenes\Delete.cshtml" />
+    <Content Include="Views\examenes\Details.cshtml" />
+    <Content Include="Views\examenes\Edit.cshtml" />
+    <Content Include="Views\examenes\Index.cshtml" />
+    <Content Include="Views\tipo_examen_ocupacional\Create.cshtml" />
+    <Content Include="Views\tipo_examen_ocupacional\Delete.cshtml" />
+    <Content Include="Views\tipo_examen_ocupacional\Details.cshtml" />
+    <Content Include="Views\tipo_examen_ocupacional\Edit.cshtml" />
+    <Content Include="Views\tipo_examen_ocupacional\Index.cshtml" />
+    <Content Include="Views\Pacientes\Create.cshtml" />
+    <Content Include="Views\Pacientes\Delete.cshtml" />
+    <Content Include="Views\Pacientes\Details.cshtml" />
+    <Content Include="Views\Pacientes\Edit.cshtml" />
+    <Content Include="Views\Pacientes\Index.cshtml" />
     <Content Include="Views\medicos\Create.cshtml" />
     <Content Include="Views\medicos\Delete.cshtml" />
     <Content Include="Views\medicos\Details.cshtml" />
     <Content Include="Views\medicos\Edit.cshtml" />
     <Content Include="Views\medicos\Index.cshtml" />
-    <Content Include="Views\pacientes\Create.cshtml" />
-    <Content Include="Views\pacientes\Delete.cshtml" />
-    <Content Include="Views\pacientes\Details.cshtml" />
-    <Content Include="Views\pacientes\Edit.cshtml" />
-    <Content Include="Views\pacientes\Index.cshtml" />
-    <Content Include="Views\Shared\_persona.cshtml" />
+    <Content Include="Views\especialidads\Create.cshtml" />
+    <Content Include="Views\especialidads\Delete.cshtml" />
+    <Content Include="Views\especialidads\Details.cshtml" />
+    <Content Include="Views\especialidads\Edit.cshtml" />
+    <Content Include="Views\especialidads\Index.cshtml" />
+    <Content Include="Views\empresas\Create.cshtml" />
+    <Content Include="Views\empresas\Delete.cshtml" />
+    <Content Include="Views\empresas\Details.cshtml" />
+    <Content Include="Views\empresas\Edit.cshtml" />
+    <Content Include="Views\empresas\Index.cshtml" />
+    <Content Include="Views\Account\ResponsibleLogin.cshtml" />
+    <Content Include="Views\History\Index.cshtml" />
+    <Content Include="Views\History\_EntityHistory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -445,6 +419,19 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Desktop\tracker-enabled-dbcontext\TrackerEnabledDbContext.Common\TrackerEnabledDbContext.Common.csproj">
+      <Project>{ac9808cc-8932-40ae-8f26-3fba558a5549}</Project>
+      <Name>TrackerEnabledDbContext.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Desktop\tracker-enabled-dbcontext\TrackerEnabledDbContext.Identity\TrackerEnabledDbContext.Identity.csproj">
+      <Project>{8a73486c-9d6b-4132-b94b-007e6737b734}</Project>
+      <Name>TrackerEnabledDbContext.Identity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
