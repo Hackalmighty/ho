@@ -464,7 +464,9 @@ namespace policlinico__con_migracion.Controllers
 
             base.Dispose(disposing);
         }
-
+        /// <summary>
+        /// mi super comentario, quien lo vea apruebelo
+        /// </summary>
         #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
